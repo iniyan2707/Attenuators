@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tnetwork">
+
+    <ImageView
+        android:id="@+id/timage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="R1(ohms):"
+        android:textSize="25dp"
+        android:id="@+id/R1"
+        >
+
+    </TextView>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timage"
+        android:layout_alignBottom="@+id/R1"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/R1"
+        android:id="@+id/R1input"
+        android:inputType="numberDecimal"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="R2(ohms):"
+        android:textSize="25dp"
+        android:id="@+id/R2"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/R2Input"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/R2"
+        android:layout_below="@+id/R1input"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/R2"
+        android:inputType="numberDecimal"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Attenuation(dB):"
+        android:textSize="25dp"
+        android:id="@+id/Att"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/AttInput"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Att"
+        android:layout_below="@+id/R2Input"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/Att"
+        android:inputType="numberDecimal"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Att"
+        android:text="Calculate"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Calc"
+        >
+
+    </Button>
+
+
+
+    <TextView
+        android:id="@+id/Ra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Calc"
+        android:text="Ra:"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ra"
+        android:text="Rb:"
+        android:textSize="25dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rb"
+        android:text="Rc:"
+        android:textSize="25dp"
+
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+
+
+
+</RelativeLayout>
