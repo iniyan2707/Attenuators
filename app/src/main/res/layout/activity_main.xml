@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".MainActivity">
 
     <Button
@@ -11,7 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="T Network"
-        android:layout_marginTop="20dp"
+        android:background="@color/ora"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="40dp"
         >
     </Button>
 
@@ -19,16 +22,20 @@
         android:id="@+id/pi_network"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/tnetwork"
+        android:background="@color/ora"
+        android:textColor="@color/colorPrimary"
         android:text="PI Network">
     </Button>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="Bridged T network"
+        android:background="@color/ora"
+        android:textColor="@color/colorPrimary"
         android:layout_below="@+id/pi_network"
         android:id="@+id/BridgedNetwork"
         >

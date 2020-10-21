@@ -3,4 +3,14 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="colorBackground">#73EAFA</color>
+    <color name="coloredittext">#39813D</color>
+    <color name="green">#117715</color>
+    <color name="purple">#5F36A8</color>
+    <color name="ora">#B8F473</color>
+    <color name="red">#F64235</color>
+
+
+
+
 </resources>

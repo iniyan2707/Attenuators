@@ -1,15 +1,20 @@
 package com.example.attenuators;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 import com.bumptech.glide.Glide;
 
@@ -19,12 +24,15 @@ public class Tnetwork extends AppCompatActivity {
     private EditText r1,r2,att;
     private Button Calculate;
     private TextView TextRA,TextRB,TextRC;
+    private Toolbar toolbar;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tnetwork);
+        getSupportActionBar().setTitle("T Network");
 
         imageView=(ImageView) findViewById(R.id.timage);
         r1=(EditText) findViewById(R.id.R1input);
@@ -38,16 +46,17 @@ public class Tnetwork extends AppCompatActivity {
                 .load(R.drawable.t)
                 .into(imageView);
 
-
-
         Calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                att.onEditorAction(EditorInfo.IME_ACTION_DONE);
+
                 calculate();
             }
         });
 
     }
+
 
     private void calculate()
     {
@@ -66,9 +75,10 @@ public class Tnetwork extends AppCompatActivity {
         double Rb=(2*Math.sqrt(R1*R2)*N/(N*N-1));
         double Rc=(R2*(N*N+1)/(N*N-1))- (2*Math.sqrt(R1*R2)*N/(N*N-1));
 
-        TextRA.setText(String.format("RA: %.2f",Ra));
-        TextRB.setText(String.format("RB: %.2f",Rb));
-        TextRC.setText(String.format("RC: %.2f",Rc));
+        TextRA.setText(String.format("Ra: %.2f ohms",Ra));
+        TextRB.setText(String.format("Rb: %.2f ohms",Rb));
+        TextRC.setText(String.format("Rc: %.2f ohms",Rc));
     }
+
 
 }

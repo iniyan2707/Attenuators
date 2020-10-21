@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".Tnetwork">
 
     <ImageView
@@ -21,6 +22,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
         android:text="R1(ohms):"
+        android:textColor="@color/purple"
         android:textSize="25dp"
         android:id="@+id/R1"
         >
@@ -35,6 +37,11 @@
         android:layout_marginLeft="25dp"
         android:layout_toRightOf="@+id/R1"
         android:id="@+id/R1input"
+        app:backgroundTint="@color/purple"
+        android:textColor="@color/purple"
+        android:textColorHighlight="@color/purple"
+        android:textColorHint="@color/purple"
+        android:textColorLink="@color/purple"
         android:inputType="numberDecimal"
         >
     </EditText>
@@ -46,6 +53,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="R2(ohms):"
+        android:textColor="@color/purple"
         android:textSize="25dp"
         android:id="@+id/R2"
         >
@@ -60,6 +68,11 @@
         android:layout_below="@+id/R1input"
         android:layout_marginLeft="25dp"
         android:layout_toRightOf="@+id/R2"
+        app:backgroundTint="@color/purple"
+        android:textColor="@color/purple"
+        android:textColorHighlight="@color/purple"
+        android:textColorHint="@color/purple"
+        android:textColorLink="@color/purple"
         android:inputType="numberDecimal"
         >
     </EditText>
@@ -71,6 +84,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="Attenuation(dB):"
+        android:textColor="@color/purple"
         android:textSize="25dp"
         android:id="@+id/Att"
         >
@@ -85,6 +99,11 @@
         android:layout_below="@+id/R2Input"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/Att"
+        app:backgroundTint="@color/purple"
+        android:textColor="@color/purple"
+        android:textColorHighlight="@color/purple"
+        android:textColorHint="@color/purple"
+        android:textColorLink="@color/purple"
         android:inputType="numberDecimal"
         >
     </EditText>
@@ -95,6 +114,8 @@
         android:layout_below="@id/Att"
         android:text="Calculate"
         android:layout_marginTop="20dp"
+        android:background="@color/ora"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:id="@+id/Calc"
         >
@@ -111,6 +132,7 @@
         android:text="Ra:"
         android:textSize="25dp"
         android:layout_marginLeft="20dp"
+        android:textColor="@color/red"
         android:layout_marginTop="20dp">
 
     </TextView>
@@ -122,7 +144,7 @@
         android:layout_below="@+id/Ra"
         android:text="Rb:"
         android:textSize="25dp"
-
+        android:textColor="@color/red"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp">
 
@@ -135,8 +157,7 @@
         android:layout_below="@+id/Rb"
         android:text="Rc:"
         android:textSize="25dp"
-
-
+        android:textColor="@color/red"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp">
 
